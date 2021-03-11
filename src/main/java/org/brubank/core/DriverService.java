@@ -16,13 +16,15 @@ public class DriverService {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         //TODO: para implementar con ios, deberiamos crear un archivo config.properties y 2 perfiles en el pom (ios y android) para indicar que se va a ejecutar, luego usar esas properties en las capabilities dependiendo la plataforma
         String appPath = Paths.get("BruContacts.apk").toFile().getAbsolutePath();
-        capabilities.setCapability("deviceName", "Redmi note 8 Pro");
-        capabilities.setCapability(CapabilityType.PLATFORM_NAME, "Android");
+        capabilities.setCapability("device", "Google Pixel 3");
+        capabilities.setCapability("os_version", "9.0");
         capabilities.setCapability("resetKeyboard", "true");
         capabilities.setCapability("unicodeKeyboard", "true");
-        capabilities.setCapability("app", appPath);
+        capabilities.setCapability("app", "bs://2bb943b2d30d587cc1cb57d47c69294b3b78f63a");
+        capabilities.setCapability("browserstack.user", "juanspoleti1");
+        capabilities.setCapability("browserstack.key", "CSSfGLerGDEzVX4PsGYL");
 
-        driver = new AppiumDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+        driver = new AppiumDriver(new URL("http://hub.browserstack.com/wd/hub"), capabilities);
     }
 
     public static void dismissDriver() {
