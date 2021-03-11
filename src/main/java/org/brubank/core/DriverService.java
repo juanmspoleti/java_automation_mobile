@@ -15,7 +15,7 @@ public class DriverService {
     public static void createDriver() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         //TODO: para implementar con ios, deberiamos crear un archivo config.properties y 2 perfiles en el pom (ios y android) para indicar que se va a ejecutar, luego usar esas properties en las capabilities dependiendo la plataforma
-        String appPath = Paths.get("app", "BruContacts.apk").toFile().getAbsolutePath();
+        String appPath = Paths.get("BruContacts.apk").toFile().getAbsolutePath();
         capabilities.setCapability("deviceName", "Redmi note 8 Pro");
         capabilities.setCapability(CapabilityType.PLATFORM_NAME, "Android");
         capabilities.setCapability("resetKeyboard", "true");
