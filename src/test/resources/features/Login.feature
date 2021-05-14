@@ -15,7 +15,7 @@ Feature: As a potential client i want to interact with the Login functionalities
       | email            | password |
       | gaby@brubank.com | g.1234   |
 
-  Scenario Outline: The user tries to log into the app with invalid data
+  Scenario Outline: The user tries to log in into the app with invalid data
     Given The app is loaded correctly
     When The user do the login process with '<email>' and '<password>'
     Then The message '<message>' is displayed in login view

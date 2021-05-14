@@ -4,14 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.brubank</groupId>
-    <artifactId>bruContacts</artifactId>
+    <groupId>com.example</groupId>
+    <artifactId>java_automation_mobile</artifactId>
     <version>1.0.0</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <cucumber.version>4.7.4</cucumber.version>
         <cucumber.filter>@Smoke</cucumber.filter>
-        <cucumber.options>src/test/resources/features --glue org/brubank --tags ${cucumber.filter} --tags 'not @Bug' --plugin pretty</cucumber.options>
+        <cucumber.options>src/test/resources/features -g com/example -t ${cucumber.filter} -t 'not @Bug' -p pretty -p html:target/cucumber-reports</cucumber.options>
     </properties>
 
     <dependencies>
@@ -38,7 +38,7 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>6.14.3</version>
+            <version>7.0.0</version>
         </dependency>
     </dependencies>
 

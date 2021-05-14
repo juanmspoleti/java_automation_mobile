@@ -1,0 +1,76 @@
+Bugs
+
+#Bug 1
+Reporter: Juan Manuel Spoleti
+Title: Fatal error login with invalid password or email
+Description: When i try to log in with: invalid password and email, empty password and invalid email: the app crashes.
+Log: java.lang.IndexOutOfBoundsException: Empty list doesn't contain element at index 3.
+Product: BruContacts
+Component: Login
+Version: 1.0
+Platform: Android
+Priority: High
+Status: TODO
+Assigned to: Develop team
+
+#Bug 2
+Reporter: Juan Manuel Spoleti
+Title: Access error with valid user
+Description: I try to log in with: gaby@brubank.com g.1234 and nothing happens. The user exists in the database.
+Product: BruContacts
+Component: Login
+Version: 1.0
+Platform: Android
+Priority: Medium
+Status: TODO
+Assigned to: Security team
+
+#Bug 3
+Reporter: Juan Manuel Spoleti
+Title: Typing error in submenu
+Description: The text of the submenu is misspeled. Expected: "Ingresá tu usuario y clave para acceder a tu listado de contactos."
+Product: BruContacts
+Component: Login
+Version: 1.0
+Platform: Android
+Priority: Low
+Status: TODO
+Assigned to: Develop team
+
+#Bug 4
+Reporter: Juan Manuel Spoleti
+Title: Error when click "Forgot password" button
+Description: When i try to click "Olvidé mi clave" button the app crashes.
+Log: java.lang.IndexOutOfBoundsException: Empty list doesn't contain element at index 3.
+Product: BruContacts
+Component: Login
+Version: 1.0
+Platform: Android
+Priority: High
+Status: TODO
+Assigned to: Develop team
+
+#Bug 5
+Reporter: Juan Manuel Spoleti
+Title: Error when click "New contact" button
+Description: When i try to click "Nuevo contacto" button the app goes to log in. If i log in again and click the same button, the app crashes.
+Log: (When the app crashes) java.lang.IndexOutOfBoundsException: Empty list doesn't contain element at index 3.
+Product: BruContacts
+Component: Home
+Version: 1.0
+Platform: Android
+Priority: High
+Status: TODO
+Assigned to: Develop team
+
+#Bug 6
+Reporter: Juan Manuel Spoleti
+Title: Error when sorting by name or last name
+Description: When i try to sort by name, sort by last name. And when i try to sort by last name, sort by name. Is inverted.
+Product: BruContacts
+Component: Home
+Version: 1.0
+Platform: Android
+Priority: Medium
+Status: TODO
+Assigned to: Develop team

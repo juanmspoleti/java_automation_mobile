@@ -1,0 +1,17 @@
+Improves
+
+App:
+1. Keep the user session when the app closes.
+2. Logout button in home view.
+3. Catch errors.
+
+Automation:
+1. Create config properties file to use properties like time of the waits, date formats, capabilities, platforms.
+2. Use of profiles with maven in pom.xml to separate the executions like Android and Ios or to use different types of capabilities.
+3. Capabilities in json file.
+4. Services classes to put in there the business logic.
+5. Usage of docker compose with a image of jenkins to run the tests (run that docker-compose.yml in the server)
+6. Usage of any cloud web service like Browser stack, Kobiton or Sauce labs.
+7. Locators in properties file.
+8. Docker compose to local test (with a image of an Android device and Selenium hub).
+9. Usage of some reporting like Extent reports.
